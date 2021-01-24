@@ -1,0 +1,41 @@
+header {
+    @extend %fondBlanc;
+    ul.nav-pages {
+        height: 3.94rem;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.2);
+        li {
+            margin-top: 1.4rem;
+            display: inline-block;
+            a {
+                display: block;
+                position: absolute;
+                i {
+                    font-size: map-get($size, retour);
+                }
+            }
+            a.logo {
+                height: map-get($size, logo);
+                left: 50%;
+                transform: translateX(-50%);
+                img {
+                    height: 100%;
+                }
+            }
+            a.retour {
+                margin-left: map-get($size, marge);
+                @extend %txtGris;
+            }
+        }
+    }
+    // font-size: map-get($font-size, quote);
+    // // // // // @include mobile-only {
+    // // // // //     font-size: map-get($font-size, quote)*0.4;
+    // // // // // }
+    // map-get($couleurs, primaire);
+    // @include mobile-only {
+    //     height: 3.94rem;
+    // }
+    // box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,10 @@
+.banner-resto__img {
+    width: 100%;
+    max-height: 16rem;
+    object-fit: cover;
+    object-position: left center;
+    @include not-mobile {
+        max-height: 20rem;
+        object-position: center 60%;
+    }
+}

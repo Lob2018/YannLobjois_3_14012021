@@ -1,0 +1,24 @@
+        footer {
+            @extend %fondGrisFonce;
+            @extend %txtBlanc;
+            padding: map-get($size, marge) map-get($size, marge) 2.6rem map-get($size, marge);
+            h3 {
+                font-weight: lighter;
+                margin-bottom: 1rem;
+            }
+            nav ul li {
+                a {
+                    @extend %txtBlanc;
+                    i {
+                        font-size: 0.8rem;
+                        margin-right: 0.5rem;
+                    }
+                    .i--turned {
+                        transform: scale(0.7, 0.9);
+                        transform-origin: center left;
+                        margin-right: 0.19rem;
+                    }
+                }
+                margin-top: 0.53rem;
+            }
+        }

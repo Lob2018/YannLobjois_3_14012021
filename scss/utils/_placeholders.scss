@@ -1,0 +1,59 @@
+%fondBlanc {
+    background: map-get($couleurs, blanc);
+}
+
+%fondGrisFonce {
+    background: map-get($couleurs, gris);
+}
+
+%fondGrisClair {
+    background: map-get($couleurs, grisClair);
+}
+
+%fondGrisTresClair {
+    background: map-get($couleurs, grisTresClair);
+}
+
+%fondPrimairePale {
+    background: lighten(map-get($couleurs, primaire), 35%)
+}
+
+%fondVert {
+    background: map-get($couleurs, vertPale);
+}
+
+%txtNoWrap {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+%txtBlanc {
+    color: map-get($couleurs, blanc);
+}
+
+%txtGris {
+    color: map-get($couleurs, gris);
+}
+
+%txtPrimaire {
+    color: map-get($couleurs, primaire);
+}
+
+%txtGrisClair {
+    color: lighten(map-get($couleurs, gris), 20%)
+}
+
+%txtVert {
+    color: map-get($couleurs, vert);
+}
+
+%fontRoboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+%icoWajust {
+    transform: scale(0.8, 0.9);
+    transform-origin: center left;
+}

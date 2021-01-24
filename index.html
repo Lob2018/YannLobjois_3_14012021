@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- IE highest mode available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ohmyfood</title>
+    <meta name="description" content="Réservez le menu qui vous convient">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/logo/ohmyfood@2x.svg">
+    <!-- PROD -->
+    <!-- <link rel="stylesheet" href="./css/prefixed/style.css"> -->
+    <!-- DEV -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- Requêtes CORS avec marqueur d'auth. à 'same-origin' -->
+    <script src="https://kit.fontawesome.com/5333f592a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER -->
+        <header>
+            <nav>
+                <ul class="nav-pages">
+                    <li>
+                        <a class="logo" href="#">
+                            <img src="./img/logo/ohmyfood@2x.svg" alt="Logo Oh My Food">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="rechercher">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p>
+        </div>
+        <section class="cta">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a href="#restaurants" class="btn-principal">Explorer nos restaurants</a>
+        </section>
+
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="carte-fonctionnement">
+                <p>1</p>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="carte-fonctionnement">
+                <p>2</p>
+                <i class="fas fa-list-ul ico--ajust"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="carte-fonctionnement carte-fonctionnement--active">
+                <p>3</p>
+                <i class="fas fa-store ico--ajust ico--active"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+
+        <section id="restaurants" class="restaurants">
+            <h2>Restaurants</h2>
+            <nav>
+                <ul class="nav__pages">
+                    <li>
+                        <i class="far fa-heart"></i>
+                        <p class="restaurants__nouveau">Nouveau</p>
+                        <a href="./html/la-palette-du-gout.html" class="card-restos">
+                            <img class="carte__img" src="./img/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
+                            <p>
+                                <span class="restos__nom">La palette du goût</span>
+                                <span class="restos__ville">Ménilmontant</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li><i class="far fa-heart"></i>
+                        <a href="./html/la-note-enchantee.html" class="card-restos">
+                            <img class="carte__img img--centered" src="./img/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
+                            <p>
+                                <span class="restos__nom">La note enchantée</span>
+                                <span class="restos__ville">Charonne</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="far fa-heart"></i>
+                        <a href="./html/a-la-francaise.html" class="card-restos">
+                            <img class="carte__img" src="./img/restaurants/a-la-francaise.jpg" alt="À la française">
+                            <p>
+                                <span class="restos__nom">À la française</span>
+                                <span class="restos__ville">Cité Rouge</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="far fa-heart"></i>
+                        <a href="./html/le-delice-des-sens.html" class="card-restos">
+                            <img class="carte__img" src="./img/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
+                            <p>
+                                <span class="restos__nom">Le délice des sens</span>
+                                <span class="restos__ville">Ménilmontant</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <h2 class="horsecran">Liens utiles</h2>
+            <h3>ohmyfood</h3>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fas fa-hands-helping i--turned"></i> Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+
+</html>

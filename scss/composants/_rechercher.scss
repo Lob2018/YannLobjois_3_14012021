@@ -1,0 +1,15 @@
+.rechercher {
+    @extend %fondGrisClair;
+    @extend %txtGris;
+    padding: 0.9rem 0;
+    text-align: center;
+    i {
+        transform: translateX(-1.8rem);
+    }
+    p {
+        display: inline-block;
+        font-size: map-get($size, rechercher);
+        font-weight: bold;
+        margin-left: - map-get($size, rechercher);
+    }
+}

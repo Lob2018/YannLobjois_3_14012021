@@ -1,0 +1,451 @@
+.la-carte .plats a.card-plat, .fonctionnement, .restaurants a.card-restos p, header {
+  background: #FFF;
+}
+
+footer {
+  background: #353535;
+}
+
+.rechercher {
+  background: #EAEAEA;
+}
+
+.la-carte, .fonctionnement .carte-fonctionnement, .commander, .cta, .restaurants {
+  background: #F6F6F6;
+}
+
+.fonctionnement .carte-fonctionnement--active {
+  background: #f2eafb;
+}
+
+.restaurants__nouveau {
+  background: #99e2d0;
+}
+
+.la-carte .plats a.card-plat .plat__detail, .la-carte .resto--titre h1, .la-carte .resto--titre, .restaurants a.card-restos p .restos__ville, .restaurants a.card-restos p .restos__nom {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fonctionnement .carte-fonctionnement p:nth-child(1), footer nav ul li a, footer {
+  color: #FFF;
+}
+
+.la-carte .plats a.card-plat .plat__prix, .la-carte .plats a.card-plat .plat__detail, .la-carte .plats h2, .fonctionnement .carte-fonctionnement p:nth-child(3), .cta p, .rechercher, .restaurants a.card-restos p .restos__ville, header ul.nav-pages li a.retour {
+  color: #353535;
+}
+
+.fonctionnement .carte-fonctionnement--active i.ico--active {
+  color: #9356DC;
+}
+
+.fonctionnement .carte-fonctionnement i, .cta p {
+  color: #686868;
+}
+
+.restaurants__nouveau {
+  color: #008766;
+}
+
+.la-carte .plats a.card-plat h3, .la-carte .plats h2, .fonctionnement h2, .cta h1, .restaurants h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.fonctionnement .carte-fonctionnement i.ico--ajust {
+  transform: scale(0.8, 0.9);
+  transform-origin: center left;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Shrikhand", cursive;
+}
+
+header ul.nav-pages {
+  height: 3.94rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.2);
+}
+header ul.nav-pages li {
+  margin-top: 1.4rem;
+  display: inline-block;
+}
+header ul.nav-pages li a {
+  display: block;
+  position: absolute;
+}
+header ul.nav-pages li a i {
+  font-size: 1.2rem;
+}
+header ul.nav-pages li a.logo {
+  height: 1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header ul.nav-pages li a.logo img {
+  height: 100%;
+}
+header ul.nav-pages li a.retour {
+  margin-left: 1.44rem;
+}
+
+footer {
+  padding: 1.44rem 1.44rem 2.6rem 1.44rem;
+}
+footer h3 {
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+footer nav ul li {
+  margin-top: 0.53rem;
+}
+footer nav ul li a i {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+footer nav ul li a .i--turned {
+  transform: scale(0.7, 0.9);
+  transform-origin: center left;
+  margin-right: 0.19rem;
+}
+
+.restaurants {
+  padding: 3rem 1.44rem 4rem 1.44rem;
+}
+@media all and (min-width: 500px) {
+  .restaurants {
+    padding: 3rem 0 4rem 0;
+  }
+  .restaurants h2 {
+    margin: 0 1.44rem;
+  }
+  .restaurants ul.nav__pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex: 1 0 33%;
+  }
+  .restaurants ul li {
+    max-width: 25rem;
+    min-width: 25rem;
+    margin: 0 1.44rem;
+  }
+  .restaurants a.card-restos {
+    height: 15.75rem;
+  }
+  .restaurants a.card-restos .carte__img {
+    height: 10.9rem;
+  }
+  .restaurants a.card-restos .img--centered {
+    object-position: center center !important;
+  }
+}
+.restaurants h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.4rem;
+}
+.restaurants a.card-restos {
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  outline: none;
+  border: none;
+  color: black;
+  height: 15.75rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5rem;
+}
+.restaurants a.card-restos .carte__img {
+  border-radius: 0.8rem 0.8rem 0 0;
+  height: 10.9rem;
+  object-fit: cover;
+  object-position: left bottom;
+}
+.restaurants a.card-restos .img--centered {
+  object-position: center -9rem;
+}
+.restaurants a.card-restos:visited {
+  color: black;
+}
+.restaurants a.card-restos p {
+  height: 4.8rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants a.card-restos p .restos__nom {
+  max-width: calc(100% - 5rem);
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 1rem 0 0.3rem 1rem;
+}
+.restaurants a.card-restos p .restos__ville {
+  max-width: calc(100% - 5rem);
+  padding-left: 1rem;
+}
+.restaurants ul li i {
+  position: relative;
+  font-size: 1.7rem;
+  left: calc(100% - 3rem);
+  top: 13.3rem;
+}
+.restaurants__nouveau {
+  display: inline;
+  position: relative;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 0.9rem;
+  left: calc(100% - 7.7rem);
+  top: 2.15rem;
+  padding: 0.5rem 0.6rem 0.4rem 0.6rem;
+  border-radius: 0.1rem;
+}
+
+.rechercher {
+  padding: 0.9rem 0;
+  text-align: center;
+}
+.rechercher i {
+  transform: translateX(-1.8rem);
+}
+.rechercher p {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: -1rem;
+}
+
+a.btn-principal {
+  font-size: 0.95rem;
+  background: #9356DC;
+  background: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  color: white;
+  padding: 1rem 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2rem 0 3.7rem 0;
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.22);
+}
+a.btn-principal--centered {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 3rem 1rem 3rem;
+  text-align: center;
+}
+
+.horsecran {
+  position: absolute;
+  left: -1000rem;
+}
+
+.cta {
+  text-align: center;
+}
+.cta h1 {
+  padding: 2.2rem 2.3rem 0 2.3rem;
+  font-size: 1.7rem;
+}
+.cta p {
+  padding: 1rem 2.3rem 0 2.3rem;
+  font-size: 1.06rem;
+}
+
+.commander {
+  padding-top: 1rem;
+  padding-bottom: 0.9rem;
+}
+
+.fonctionnement {
+  padding: 3rem 1.44rem 4rem 1.44rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.fonctionnement h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.4rem;
+}
+.fonctionnement .carte-fonctionnement {
+  margin-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+  padding: 1.5rem 0;
+  border-radius: 1.3rem;
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.17);
+}
+.fonctionnement .carte-fonctionnement p:nth-child(1) {
+  position: relative;
+  left: -0.75rem;
+  font-size: 0.85rem;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 2;
+  background: #9356DC;
+  border-radius: 2rem;
+}
+.fonctionnement .carte-fonctionnement i {
+  font-size: 1.3rem;
+  margin-left: 0.75rem;
+}
+.fonctionnement .carte-fonctionnement p:nth-child(3) {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 1.5rem;
+}
+.banner-resto__img {
+  width: 100%;
+  max-height: 16rem;
+  object-fit: cover;
+  object-position: left center;
+}
+@media all and (min-width: 500px) {
+  .banner-resto__img {
+    max-height: 20rem;
+    object-position: center 60%;
+  }
+}
+
+.la-carte {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2.5rem 2.5rem 0rem 0rem;
+  margin-top: -2.5rem;
+}
+@media all and (min-width: 500px) {
+  .la-carte .resto--titre > i {
+    position: static !important;
+    width: 2.5rem;
+    margin-left: 2rem;
+  }
+  .la-carte .resto--titre h1 {
+    width: auto !important;
+    max-width: calc(100% - 8rem) !important;
+  }
+  .la-carte section.plats {
+    flex: 0 1 33%;
+    min-width: 25rem;
+    max-width: 25rem;
+  }
+}
+.la-carte .resto--titre {
+  position: relative;
+  display: flex;
+  flex: 0 1 100%;
+}
+.la-carte .resto--titre h1 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  width: 80%;
+  max-width: 80%;
+  padding: 1.8rem 0.5rem 0 1.44rem;
+}
+.la-carte .resto--titre > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+  padding: 2.2rem 1.44rem 0 0;
+}
+.la-carte .plats {
+  flex: 0 1 100%;
+  max-width: calc(100%);
+}
+.la-carte .plats h2 {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 1.5rem 1.44rem 0 1.44rem;
+}
+.la-carte .plats > i {
+  display: block;
+  position: relative;
+  left: 1.44rem;
+  top: 0.5rem;
+  width: 2.5rem;
+  border-top: 3px solid #99e2d0;
+}
+.la-carte .plats a.card-plat:link,
+.la-carte .plats a.card-plat:visited {
+  text-decoration: none;
+  color: black;
+}
+.la-carte .plats a.card-plat {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+  margin: 2rem 1rem 0 1rem;
+  padding: 0.9rem 0.8rem 0.8rem 0.8rem;
+}
+.la-carte .plats a.card-plat h3 {
+  font-size: 1.1rem;
+  max-width: calc(100% - 3rem);
+  flex: 1 0 100%;
+}
+.la-carte .plats a.card-plat p {
+  display: flex;
+  align-self: center;
+  flex: 1 0 100%;
+}
+.la-carte .plats a.card-plat .plat__detail {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  max-width: calc(100% - 3rem);
+  flex: 1 0 100%;
+}
+.la-carte .plats a.card-plat .plat__prix {
+  flex: 1 0 0%;
+  text-align: right;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin: 0.35rem 0.5rem 0 0;
+}
+.la-carte .plats a.card-plat i {
+  flex: 1 0 0%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */

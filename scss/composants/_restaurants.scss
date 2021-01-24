@@ -1,0 +1,99 @@
+    .restaurants {
+        @extend %fondGrisTresClair;
+        padding: 3rem map-get($size, marge) 4rem map-get($size, marge);
+        @include not-mobile {
+            padding: 3rem 0 4rem 0;
+            h2 {
+                margin: 0 map-get($size, marge);
+            }
+            ul.nav__pages {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                flex: 1 0 33%;
+            }
+            ul li {
+                max-width: 25rem;
+                min-width: 25rem;
+                margin: 0 map-get($size, marge);
+            }
+            a.card-restos {
+                height: 15.75rem;
+                .carte__img {
+                    height: 10.9rem;
+                }
+                .img--centered {
+                    object-position: center center!important;
+                }
+            }
+        }
+        h2 {
+            @extend %fontRoboto;
+            font-size: 1.45rem;
+            margin-bottom: 0.4rem
+        }
+        a.card-restos {
+            box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+            outline: none;
+            border: none;
+            color: black;
+            height: 15.75rem;
+            display: flex;
+            flex-direction: column;
+            margin-top: -0.5rem;
+            .carte__img {
+                border-radius: 0.8rem 0.8rem 0 0;
+                height: 10.9rem;
+                object-fit: cover;
+                object-position: left bottom;
+            }
+            .img--centered {
+                object-position: center -9rem;
+            }
+            &:visited {
+                color: black;
+            }
+            p {
+                height: 4.8rem;
+                @extend %fondBlanc;
+                border-radius: 0 0 0.8rem 0.8rem;
+                display: flex;
+                flex-direction: column;
+                .restos__nom {
+                    @extend %txtNoWrap;
+                    max-width: calc(100% - 5rem);
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                    padding: 1rem 0 0.3rem 1rem;
+                }
+                .restos__ville {
+                    @extend %txtNoWrap;
+                    max-width: calc(100% - 5rem);
+                    @extend %txtGris;
+                    padding-left: 1rem;
+                }
+            }
+        }
+        ul li i {
+            position: relative;
+            font-size: 1.7rem;
+            left: calc(100% - 3rem);
+            top: 13.3rem;
+        }
+        &__nouveau {
+            display: inline;
+            position: relative;
+            @extend %fondVert;
+            @extend %txtVert;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 0.9rem;
+            left: calc(100% - 7.7rem);
+            top: 2.15rem;
+            padding: 0.5rem 0.6rem 0.4rem 0.6rem;
+            border-radius: 0.1rem;
+        }
+    }
