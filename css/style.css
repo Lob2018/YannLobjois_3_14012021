@@ -91,6 +91,8 @@ a.favoris i::after {
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
