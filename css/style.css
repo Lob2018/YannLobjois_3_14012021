@@ -434,7 +434,7 @@ a.btn-principal--centered {
 .la-carte .resto--titre a.favoris {
   max-height: 1.8rem;
   max-width: 1.8rem;
-  margin: 2.2rem 1.44rem 0 1.44rem;
+  margin: 2.2rem 1.44rem 0 0;
 }
 .la-carte .resto--titre a.favoris > i {
   font-size: 1.8rem;
