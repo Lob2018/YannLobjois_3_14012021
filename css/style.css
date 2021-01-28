@@ -58,6 +58,21 @@ footer {
   transform-origin: center left;
 }
 
+a.btn-principal::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(357deg, #995fde 0%, #ff84dd 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  border-radius: 2rem;
+  transition: opacity 250ms;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -250,9 +265,10 @@ footer nav ul li address {
 }
 
 a.btn-principal {
+  z-index: 1;
   font-size: 0.95rem;
-  background: #9356DC;
   background: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
+  position: relative;
   border: none;
   color: white;
   padding: 1rem 1.1rem;
@@ -263,6 +279,9 @@ a.btn-principal {
   cursor: pointer;
   border-radius: 2rem;
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.22);
+}
+a.btn-principal:hover::after {
+  opacity: 1;
 }
 a.btn-principal--centered {
   position: relative;

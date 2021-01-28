@@ -1,7 +1,16 @@
 a.btn-principal {
+    z-index: 1;
     font-size: 0.95rem;
-    background: map-get($couleurs, primaire);
     background: linear-gradient(357deg, map-get($couleurs, primaire) 0%, map-get($couleurs, secondaire)100%);
+    position: relative;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        @extend %animBouton;
+    }
     border: none;
     color: white;
     padding: 1rem 1.1rem;

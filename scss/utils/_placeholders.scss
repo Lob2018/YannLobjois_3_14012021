@@ -57,3 +57,18 @@
     transform: scale(0.8, 0.9);
     transform-origin: center left;
 }
+
+%animBouton {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(357deg, lighten(map-get($couleurs, primaire), 2.2) 0%, lighten(map-get($couleurs, secondaire), 2.2)100%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    border-radius: 2rem;
+    transition: opacity 250ms;
+}
