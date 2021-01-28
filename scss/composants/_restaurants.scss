@@ -77,11 +77,16 @@
                 }
             }
         }
-        ul li i {
+        & a.favoris {
             position: relative;
-            font-size: 1.7rem;
             left: calc(100% - 3rem);
             top: 13.3rem;
+            max-height: 1.7rem;
+            max-width: 1.7rem;
+            >i {
+                font-size: 1.7rem;
+                max-width: 1.7rem;
+            }
         }
         &__nouveau {
             display: inline;

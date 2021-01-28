@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .la-carte .plats a.card-plat, .fonctionnement, .restaurants a.card-restos p, header {
   background: #FFF;
 }
@@ -71,6 +72,27 @@ a.btn-principal::after {
   opacity: 0;
   border-radius: 2rem;
   transition: opacity 250ms;
+}
+
+a.favoris i::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-style: normal;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 250ms;
+  background-image: linear-gradient(357deg, #9356DC 0%, #FF79DA 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 * {
@@ -232,11 +254,16 @@ footer nav ul li address {
   max-width: calc(100% - 5rem);
   padding-left: 1rem;
 }
-.restaurants ul li i {
+.restaurants a.favoris {
   position: relative;
-  font-size: 1.7rem;
   left: calc(100% - 3rem);
   top: 13.3rem;
+  max-height: 1.7rem;
+  max-width: 1.7rem;
+}
+.restaurants a.favoris > i {
+  font-size: 1.7rem;
+  max-width: 1.7rem;
 }
 .restaurants__nouveau {
   display: inline;
@@ -375,14 +402,15 @@ a.btn-principal--centered {
   margin-top: -2.5rem;
 }
 @media all and (min-width: 500px) {
-  .la-carte .resto--titre > i {
-    position: static !important;
-    width: 2.5rem;
-    margin-left: 2rem;
-  }
   .la-carte .resto--titre h1 {
     width: auto !important;
     max-width: calc(100% - 8rem) !important;
+  }
+  .la-carte .resto--titre a.favoris {
+    margin-left: 5rem !important;
+  }
+  .la-carte .resto--titre a.favoris > i {
+    width: 2.5rem;
   }
   .la-carte section.plats {
     flex: 0 1 33%;
@@ -402,12 +430,14 @@ a.btn-principal--centered {
   max-width: 80%;
   padding: 1.8rem 0.5rem 0 1.44rem;
 }
-.la-carte .resto--titre > i {
-  position: absolute;
-  top: 0;
-  right: 0;
+.la-carte .resto--titre a.favoris {
+  max-height: 1.8rem;
+  max-width: 1.8rem;
+  margin: 2.2rem 1.44rem 0 1.44rem;
+}
+.la-carte .resto--titre a.favoris > i {
   font-size: 1.8rem;
-  padding: 2.2rem 1.44rem 0 0;
+  max-width: 1.8rem;
 }
 .la-carte .plats {
   flex: 0 1 100%;
@@ -468,6 +498,19 @@ a.btn-principal--centered {
 .la-carte .plats a.card-plat i {
   flex: 1 0 0%;
   transform: translateY(-50%);
+}
+
+a.favoris:visited, a.favoris:link {
+  color: black;
+}
+a.favoris i {
+  position: relative;
+}
+a.favoris i:hover::after {
+  opacity: 1;
+}
+a.favoris i:hover::before {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

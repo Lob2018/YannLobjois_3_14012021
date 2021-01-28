@@ -1,0 +1,20 @@
+a.favoris {
+    &:visited,
+    &:link {
+        color: black;
+    }
+    i {
+        position: relative;
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+            &::before {
+                opacity: 0;
+            }
+        }
+        &::after {
+            @extend %animFavorite;
+        }
+    }
+}
