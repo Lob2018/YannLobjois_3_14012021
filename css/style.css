@@ -137,6 +137,9 @@ footer nav ul li a .i--turned {
   transform-origin: center left;
   margin-right: 0.19rem;
 }
+footer nav ul li address {
+  font-style: normal;
+}
 
 .restaurants {
   padding: 3rem 1.44rem 4rem 1.44rem;
