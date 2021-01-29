@@ -94,3 +94,31 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
 }
+
+%animLoading {
+    animation: fadeOut 0.5s ease 1.33s;
+    animation-fill-mode: both;
+    @keyframes fadeOut {
+        from {
+            z-index: 100;
+            opacity: 1;
+        }
+        to {
+            z-index: -100;
+            opacity: 0;
+        }
+    }
+}
+
+%animLoader {
+    animation: spinner 0.5s linear infinite;
+    animation-fill-mode: both;
+    @keyframes spinner {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

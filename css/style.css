@@ -96,6 +96,34 @@ a.favoris i::after {
   -moz-text-fill-color: transparent;
 }
 
+.loading {
+  animation: fadeOut 0.5s ease 1.33s;
+  animation-fill-mode: both;
+}
+@keyframes fadeOut {
+  from {
+    z-index: 100;
+    opacity: 1;
+  }
+  to {
+    z-index: -100;
+    opacity: 0;
+  }
+}
+
+.loader {
+  animation: spinner 0.5s linear infinite;
+  animation-fill-mode: both;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -177,6 +205,24 @@ footer nav ul li a .i--turned {
 }
 footer nav ul li address {
   font-style: normal;
+}
+
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+}
+
+.loader {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  top: calc(50% - 2.25rem);
+  left: calc(50% - 2.25rem);
+  border: 16px solid #FF79DA;
+  border-top: 16px solid #9356DC;
+  border-radius: 50%;
 }
 
 .restaurants {
@@ -464,10 +510,10 @@ a.btn-principal--centered {
   color: black;
 }
 .la-carte .plats a.card-plat:nth-child(1) {
-  animation: fadein 1s ease 0.2s;
+  animation: fadeIn 1s ease 0.2s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -478,10 +524,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(2) {
-  animation: fadein 1s ease 0.4s;
+  animation: fadeIn 1s ease 0.4s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -492,10 +538,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(3) {
-  animation: fadein 1s ease 0.6s;
+  animation: fadeIn 1s ease 0.6s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -506,10 +552,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(4) {
-  animation: fadein 1s ease 0.8s;
+  animation: fadeIn 1s ease 0.8s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -520,10 +566,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(5) {
-  animation: fadein 1s ease 1s;
+  animation: fadeIn 1s ease 1s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -534,10 +580,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(6) {
-  animation: fadein 1s ease 1.2s;
+  animation: fadeIn 1s ease 1.2s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -548,10 +594,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(7) {
-  animation: fadein 1s ease 1.4s;
+  animation: fadeIn 1s ease 1.4s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -562,10 +608,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(8) {
-  animation: fadein 1s ease 1.6s;
+  animation: fadeIn 1s ease 1.6s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -576,10 +622,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(9) {
-  animation: fadein 1s ease 1.8s;
+  animation: fadeIn 1s ease 1.8s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -590,10 +636,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(10) {
-  animation: fadein 1s ease 2s;
+  animation: fadeIn 1s ease 2s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -604,10 +650,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(11) {
-  animation: fadein 1s ease 2.2s;
+  animation: fadeIn 1s ease 2.2s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -618,10 +664,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(12) {
-  animation: fadein 1s ease 2.4s;
+  animation: fadeIn 1s ease 2.4s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -632,10 +678,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(13) {
-  animation: fadein 1s ease 2.6s;
+  animation: fadeIn 1s ease 2.6s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -646,10 +692,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(14) {
-  animation: fadein 1s ease 2.8s;
+  animation: fadeIn 1s ease 2.8s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -660,10 +706,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(15) {
-  animation: fadein 1s ease 3s;
+  animation: fadeIn 1s ease 3s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -674,10 +720,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(16) {
-  animation: fadein 1s ease 3.2s;
+  animation: fadeIn 1s ease 3.2s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -688,10 +734,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(17) {
-  animation: fadein 1s ease 3.4s;
+  animation: fadeIn 1s ease 3.4s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -702,10 +748,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(18) {
-  animation: fadein 1s ease 3.6s;
+  animation: fadeIn 1s ease 3.6s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -716,10 +762,10 @@ a.btn-principal--centered {
   }
 }
 .la-carte .plats a.card-plat:nth-child(19) {
-  animation: fadein 1s ease 3.8s;
+  animation: fadeIn 1s ease 3.8s;
   animation-fill-mode: both;
 }
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(1rem);
@@ -738,10 +784,6 @@ a.btn-principal--centered {
   border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
   margin: 2rem 1rem 0 1rem;
   padding: 0.9rem 0.8rem 0.8rem 0.8rem;
-}
-.la-carte .plats a.card-plat::before {
-  content: "";
-  opacity: 0;
 }
 .la-carte .plats a.card-plat h3 {
   font-size: 1.1rem;

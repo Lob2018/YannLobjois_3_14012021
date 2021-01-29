@@ -1,0 +1,19 @@
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: map-get($couleurs, blanc);
+    @extend %animLoading;
+}
+
+.loader {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    top: calc(50% - 2.25rem);
+    left: calc(50% - 2.25rem);
+    border: 16px solid map-get($couleurs, secondaire);
+    border-top: 16px solid map-get($couleurs, primaire);
+    border-radius: 50%;
+    @extend %animLoader;
+}

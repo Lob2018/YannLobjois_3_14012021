@@ -29,9 +29,9 @@
 }
 
 @mixin anim-menu($i) {
-    animation: fadein 1s ease $i;
+    animation: fadeIn 1s ease $i;
     animation-fill-mode: both;
-    @keyframes fadein {
+    @keyframes fadeIn {
         from {
             opacity: 0;
             transform: translateY(1rem);
