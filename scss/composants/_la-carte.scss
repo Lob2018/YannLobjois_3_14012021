@@ -71,7 +71,16 @@
                 text-decoration: none;
                 color: black;
             }
+            @for $i from 1 to 20 {
+                a.card-plat:nth-child(#{$i}) {
+                    @include anim-menu($i* 0.2s);
+                }
+            }
             a.card-plat {
+                &::before {
+                    content: "";
+                    opacity: 0;
+                }
                 @extend %fondBlanc;
                 overflow: hidden;
                 display: flex;

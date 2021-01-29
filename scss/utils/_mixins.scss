@@ -27,3 +27,18 @@
         @content;
     }
 }
+
+@mixin anim-menu($i) {
+    animation: fadein 1s ease $i;
+    animation-fill-mode: both;
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
