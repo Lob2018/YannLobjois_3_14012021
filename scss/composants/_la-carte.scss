@@ -35,7 +35,7 @@
                 width: 80%;
                 max-width: 80%;
                 @extend %txtNoWrap;
-                padding: 1.8rem 0.5rem 0 map-get($size, marge);
+                margin: 1.8rem 0.5rem 0 map-get($size, marge);
             }
             & a.favoris {
                 max-height: 1.8rem;

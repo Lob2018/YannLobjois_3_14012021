@@ -249,11 +249,11 @@ footer nav ul li address {
   max-width: calc(100% - 5rem);
   font-size: 1.1rem;
   font-weight: 800;
-  padding: 1rem 0 0.3rem 1rem;
+  margin: 1rem 0 0.3rem 1rem;
 }
 .restaurants a.card-restos p .restos__ville {
   max-width: calc(100% - 5rem);
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 .restaurants a.favoris {
   position: relative;
@@ -332,7 +332,7 @@ a.btn-principal--centered {
   font-size: 1.7rem;
 }
 .cta p {
-  padding: 1rem 2.3rem 0 2.3rem;
+  margin: 1rem 2.3rem 0 2.3rem;
   font-size: 1.06rem;
 }
 
@@ -429,7 +429,7 @@ a.btn-principal--centered {
   font-weight: lighter;
   width: 80%;
   max-width: 80%;
-  padding: 1.8rem 0.5rem 0 1.44rem;
+  margin: 1.8rem 0.5rem 0 1.44rem;
 }
 .la-carte .resto--titre a.favoris {
   max-height: 1.8rem;
