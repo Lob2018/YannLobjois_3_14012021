@@ -112,13 +112,17 @@
 
 %animLoader {
     animation: spinner 0.5s linear infinite;
-    animation-fill-mode: both;
-    @keyframes spinner {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+}
+
+%animChoix {
+    animation: spinner 0.4s linear;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }

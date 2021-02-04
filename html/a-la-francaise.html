@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../img/logo/ohmyfood@2x.svg">
     <!-- PROD -->
-    <!-- <link rel="stylesheet" href="./css/prefixed/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/prefixed/style.css">
     <!-- DEV -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <!-- Requêtes CORS avec marqueur d'auth. à 'same-origin' -->
@@ -47,46 +47,73 @@
             <section class="plats">
                 <h2>ENTRÉES</h2> <i></i>
                 <a href="#" class="card-plat">
-                    <h3>Tartare de poulpe acidulé</h3>
-                    <p><span class="plat__detail">Aux zestes d'orange</span> <span class="plat__prix">25€</span></p>
+                    <div class="plat__txt">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p><span class="plat__detail">Aux zestes d'orange</span> <span class="plat__prix">25€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Velouté de légumes d'antan</h3>
-                    <p><span class="plat__detail">Carotte, panais, topinambour</span> <span class="plat__prix">35€</span></p>
+                    <div class="plat__txt">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p><span class="plat__detail">Carotte, panais, topinambour</span> <span class="plat__prix">35€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Soupe à l'oignon</h3>
-                    <p><span class="plat__detail">Revisitée</span> <span class="plat__prix">20€</span></p>
+                    <div class="plat__txt">
+                        <h3>Soupe à l'oignon</h3>
+                        <p><span class="plat__detail">Revisitée</span> <span class="plat__prix">20€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
             </section>
             <section class="plats">
                 <h2>PLATS</h2><i></i>
                 <a href="#" class="card-plat">
-                    <h3>Coquilles Saint-Jacques</h3>
-                    <p><span class="plat__detail">Accompagnés d'une purée de panais</span> <span class="plat__prix">40€</span></p>
+                    <div class="plat__txt">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <p><span class="plat__detail">Accompagnés d'une purée de panais</span> <span class="plat__prix">40€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Magret de canard</h3>
-                    <p><span class="plat__detail">Et parmentier de pommes de terre</span> <span class="plat__prix">35€</span></p>
+                    <div class="plat__txt">
+                        <h3>Magret de canard</h3>
+                        <p><span class="plat__detail">Et parmentier de pommes de terre</span> <span class="plat__prix">35€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                    <p><span class="plat__detail">Sur son lit de gnocchis aux légumes</span> <span class="plat__prix">44€</span></p>
+                    <div class="plat__txt">
+                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                        <p><span class="plat__detail">Sur son lit de gnocchis aux légumes</span> <span class="plat__prix">44€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
             </section>
             <section class="plats">
                 <h2>DESSERTS</h2> <i></i>
                 <a href="#" class="card-plat">
-                    <h3>Pétales de violettes glacés</h3>
-                    <p><span class="plat__detail">Et purée de noisette</span> <span class="plat__prix">18€</span></p>
+                    <div class="plat__txt">
+                        <h3>Pétales de violettes glacés</h3>
+                        <p><span class="plat__detail">Et purée de noisette</span> <span class="plat__prix">18€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Fondant au chocolat</h3>
-                    <p><span class="plat__detail">Revisité</span> <span class="plat__prix">22€</span></p>
+                    <div class="plat__txt">
+                        <h3>Fondant au chocolat</h3>
+                        <p><span class="plat__detail">Revisité</span> <span class="plat__prix">22€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
                 <a href="#" class="card-plat">
-                    <h3>Millefeuille croustillant</h3>
-                    <p><span class="plat__detail">Myrtilles et pâte d’amande</span> <span class="plat__prix">23€</span></p>
+                    <div class="plat__txt">
+                        <h3>Millefeuille croustillant</h3>
+                        <p><span class="plat__detail">Myrtilles et pâte d’amande</span> <span class="plat__prix">23€</span></p>
+                    </div>
+                    <div class="plat__choix"><i class="fas fa-check-circle"></i></div>
                 </a>
             </section>
         </section>

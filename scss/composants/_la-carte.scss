@@ -1,123 +1,145 @@
-    .la-carte {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        @extend %fondGrisTresClair;
-        border-radius: 2.5rem 2.5rem 0rem 0rem;
-        margin-top: -2.5rem;
-        @include not-mobile {
-            .resto--titre {
-                h1 {
-                    width: auto!important;
-                    max-width: calc(100% - 8rem)!important;
+        .la-carte {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            @extend %fondGrisTresClair;
+            border-radius: 2.5rem 2.5rem 0rem 0rem;
+            margin-top: -2.5rem;
+            @include not-mobile {
+                .resto--titre {
+                    h1 {
+                        width: auto!important;
+                        max-width: calc(100% - 8rem)!important;
+                    }
+                    a.favoris {
+                        margin-left: 5rem!important;
+                        >i {
+                            width: 2.5rem;
+                        }
+                    }
                 }
-                a.favoris {
-                    margin-left: 5rem!important;
+                section.plats {
+                    flex: 0 1 33%;
+                    min-width: 25rem;
+                    max-width: 25rem;
+                }
+            }
+            .resto--titre {
+                position: relative;
+                display: flex;
+                flex: 0 1 100%;
+                @extend %txtNoWrap;
+                h1 {
+                    font-size: 1.8rem;
+                    font-weight: lighter;
+                    width: 80%;
+                    max-width: 80%;
+                    @extend %txtNoWrap;
+                    margin: 1.8rem 0.5rem 0 map-get($size, marge);
+                }
+                & a.favoris {
+                    max-height: 1.8rem;
+                    max-width: 1.8rem;
+                    margin: 2.2rem map-get($size, marge) 0 0;
                     >i {
-                        width: 2.5rem;
+                        font-size: 1.8rem;
+                        max-width: 1.8rem;
                     }
                 }
             }
-            section.plats {
-                flex: 0 1 33%;
-                min-width: 25rem;
-                max-width: 25rem;
-            }
-        }
-        .resto--titre {
-            position: relative;
-            display: flex;
-            flex: 0 1 100%;
-            @extend %txtNoWrap;
-            h1 {
-                font-size: 1.8rem;
-                font-weight: lighter;
-                width: 80%;
-                max-width: 80%;
-                @extend %txtNoWrap;
-                margin: 1.8rem 0.5rem 0 map-get($size, marge);
-            }
-            & a.favoris {
-                max-height: 1.8rem;
-                max-width: 1.8rem;
-                margin: 2.2rem map-get($size, marge) 0 0;
-                >i {
-                    font-size: 1.8rem;
-                    max-width: 1.8rem;
-                }
-            }
-        }
-        .plats {
-            flex: 0 1 100%;
-            max-width: calc(100%);
-            h2 {
-                display: inline-block;
-                @extend %fontRoboto;
-                @extend %txtGris;
-                font-size: 1rem;
-                font-weight: lighter;
-                margin: 1.5rem map-get($size, marge) 0 map-get($size, marge);
-            }
-            >i {
-                display: block;
-                position: relative;
-                left: map-get($size, marge);
-                top: 0.5rem;
-                width: 2.5rem;
-                border-top: 3px solid map-get($couleurs, vertPale);
-            }
-            a.card-plat:link,
-            a.card-plat:visited {
-                text-decoration: none;
-                color: black;
-            }
-            @for $i from 1 to 20 {
-                a.card-plat:nth-child(#{$i}) {
-                    @include anim-menu($i* 0.2s);
-                }
-            }
-            a.card-plat {
-                @extend %fondBlanc;
-                overflow: hidden;
-                display: flex;
-                flex-wrap: wrap;
-                cursor: pointer;
-                box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.1);
-                border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
-                margin: 2rem 1rem 0 1rem;
-                padding: 0.9rem 0.8rem 0.8rem 0.8rem;
-                h3 {
+            .plats {
+                flex: 0 1 100%;
+                max-width: calc(100%);
+                h2 {
+                    display: inline-block;
                     @extend %fontRoboto;
-                    font-size: 1.1rem;
-                    max-width: calc(100% - 3rem);
-                    flex: 1 0 100%;
-                    // @extend %txtNoWrap;                
+                    @extend %txtGris;
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    margin: 1.5rem map-get($size, marge) 0 map-get($size, marge);
                 }
-                p {
+                >i {
+                    display: block;
+                    position: relative;
+                    left: map-get($size, marge);
+                    top: 0.5rem;
+                    width: 2.5rem;
+                    border-top: 3px solid map-get($couleurs, vertPale);
+                }
+                a.card-plat:link,
+                a.card-plat:visited {
+                    text-decoration: none;
+                    color: black;
+                }
+                @for $i from 1 to 20 {
+                    a.card-plat:nth-child(#{$i}) {
+                        @include anim-menu($i* 0.2s);
+                    }
+                }
+                a.card-plat {
+                    @extend %fondBlanc;
+                    overflow: hidden;
                     display: flex;
-                    align-self: center;
-                    flex: 1 0 100%;
-                }
-                .plat__detail {
-                    @extend %txtGris;
-                    margin-top: 0.35rem;
-                    font-size: 0.9rem;
-                    max-width: calc(100% - 3rem);
-                    @extend %txtNoWrap;
-                    flex: 1 0 100%;
-                }
-                .plat__prix {
-                    @extend %txtGris;
-                    flex: 1 0 0%;
-                    text-align: right;
-                    font-size: 0.9rem;
-                    font-weight: bolder;
-                    margin: 0.35rem 0.5rem 0 0;
-                }
-                i {
-                    flex: 1 0 0%;
-                    transform: translateY(-50%);
+                    flex-wrap: nowrap;
+                    cursor: pointer;
+                    box-shadow: 0px 4.5px 10px rgba(0, 0, 0, 0.1);
+                    border-radius: 0.8rem 0.8rem 0.8rem 0.8rem;
+                    margin: 2rem 1rem 0 1rem;
+                    &:hover {
+                        .plat__txt {
+                            min-width: calc(80% - 0.8rem);
+                        }
+                        .plat__choix i {
+                            @extend %animChoix;
+                        }
+                    }
+                    .plat__txt {
+                        min-width: calc(100% - 1.1rem);
+                        transition: min-width 0.5s;
+                        z-index: 1;
+                        position: relative;
+                        padding: 0.9rem 0rem 0.8rem 0.8rem;
+                        flex: 1 0 calc(80% - 0.8rem);
+                        h3 {
+                            @extend %fontRoboto;
+                            font-size: 1.1rem;
+                            max-width: calc(100% - 3.5rem);
+                            flex: 1 0 90%;
+                        }
+                        p {
+                            display: flex;
+                            align-self: center;
+                            flex: 1 0 90%;
+                        }
+                        .plat__detail {
+                            @extend %txtGris;
+                            margin-top: 0.35rem;
+                            font-size: 0.9rem;
+                            max-width: calc(100% - 3.5rem);
+                            @extend %txtNoWrap;
+                            flex: 1 0 90%;
+                        }
+                        .plat__prix {
+                            @extend %txtGris;
+                            flex: 1 0 10%;
+                            text-align: right;
+                            font-size: 0.9rem;
+                            font-weight: bolder;
+                            margin: 0.35rem 1.5rem 0 0;
+                        }
+                    }
+                    .plat__choix {
+                        margin-left: 0.3rem;
+                        flex: 1 0 calc(20% - 0.8rem);
+                        background-color: map-get($couleurs, vertPale);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            font-size: 2rem;
+                            @extend %txtBlanc;
+                        }
+                    }
                 }
             }
         }
-    }
