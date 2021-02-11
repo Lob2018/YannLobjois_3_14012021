@@ -843,7 +843,7 @@ a.btn-principal--centered {
   flex: 1 0 90%;
 }
 .la-carte .plats a.card-plat .plat__txt .plat__prix {
-  flex: 1 0 10%;
+  flex: 1 0 9%;
   text-align: right;
   font-size: 0.9rem;
   font-weight: bolder;
