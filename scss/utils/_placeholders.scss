@@ -73,6 +73,20 @@
     transition: opacity 250ms;
 }
 
+%animFonctionnement {
+    border-radius: 1.3rem;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 250ms;
+    @extend %fondPrimairePale;
+}
+
 %animFavorite {
     font-family: 'Font Awesome\ 5 Free';
     font-weight: bold;

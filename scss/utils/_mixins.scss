@@ -23,7 +23,13 @@
 }
 
 @mixin not-mobile {
-    @media all and (min-width: map-get($breakpoints, not-mobile)) {
+    @media all and (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin big-tv {
+    @media all and (min-width: map-get($breakpoints, tvXl)) {
         @content;
     }
 }

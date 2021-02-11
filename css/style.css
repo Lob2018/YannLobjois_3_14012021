@@ -15,7 +15,7 @@ footer {
   background: #F6F6F6;
 }
 
-.fonctionnement .carte-fonctionnement--active {
+.fonctionnement .carte-fonctionnement::after {
   background: #f2eafb;
 }
 
@@ -23,7 +23,7 @@ footer {
   background: #99e2d0;
 }
 
-.la-carte .plats a.card-plat .plat__txt .plat__detail, .la-carte .resto--titre h1, .la-carte .resto--titre, .restaurants a.card-restos p .restos__ville, .restaurants a.card-restos p .restos__nom {
+.la-carte .plats a.card-plat .plat__txt .plat__detail, .la-carte .plats a.card-plat .plat__txt h3, .la-carte .resto--titre h1, .la-carte .resto--titre, .restaurants a.card-restos p .restos__ville, .restaurants a.card-restos p .restos__nom {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -38,7 +38,7 @@ footer {
   color: #353535;
 }
 
-.fonctionnement .carte-fonctionnement--active i.ico--active {
+.fonctionnement .carte-fonctionnement:hover i {
   color: #9356DC;
 }
 
@@ -71,6 +71,19 @@ a.btn-principal::after {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
   opacity: 0;
   border-radius: 2rem;
+  transition: opacity 250ms;
+}
+
+.fonctionnement .carte-fonctionnement::after {
+  border-radius: 1.3rem;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
   transition: opacity 250ms;
 }
 
@@ -231,7 +244,7 @@ footer nav ul li address {
 .restaurants {
   padding: 3rem 1.44rem 4rem 1.44rem;
 }
-@media all and (min-width: 500px) {
+@media all and (min-width: 991px) {
   .restaurants {
     padding: 3rem 0 4rem 0;
   }
@@ -241,13 +254,12 @@ footer nav ul li address {
   .restaurants ul.nav__pages {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
     flex: 1 0 33%;
   }
   .restaurants ul li {
-    max-width: 25rem;
+    width: 40%;
     min-width: 25rem;
     margin: 0 1.44rem;
   }
@@ -259,6 +271,13 @@ footer nav ul li address {
   }
   .restaurants a.card-restos .img--centered {
     object-position: center center !important;
+  }
+}
+@media all and (min-width: 1350px) {
+  .restaurants ul li {
+    width: 25%;
+    min-width: 25rem;
+    margin: 0 1.44rem;
   }
 }
 .restaurants h2 {
@@ -401,6 +420,8 @@ a.btn-principal--centered {
   margin-bottom: 0.4rem;
 }
 .fonctionnement .carte-fonctionnement {
+  position: relative;
+  z-index: 1;
   margin-left: 0.75rem;
   display: flex;
   align-items: center;
@@ -408,6 +429,12 @@ a.btn-principal--centered {
   padding: 1.5rem 0;
   border-radius: 1.3rem;
   box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.17);
+}
+.fonctionnement .carte-fonctionnement:hover {
+  cursor: pointer;
+}
+.fonctionnement .carte-fonctionnement:hover::after {
+  opacity: 1;
 }
 .fonctionnement .carte-fonctionnement p:nth-child(1) {
   position: relative;
@@ -431,13 +458,14 @@ a.btn-principal--centered {
   font-size: 1rem;
   margin-left: 1.5rem;
 }
+
 .banner-resto__img {
   width: 100%;
   max-height: 16rem;
   object-fit: cover;
   object-position: left center;
 }
-@media all and (min-width: 500px) {
+@media all and (min-width: 991px) {
   .banner-resto__img {
     max-height: 20rem;
     object-position: center 60%;
@@ -451,7 +479,7 @@ a.btn-principal--centered {
   border-radius: 2.5rem 2.5rem 0rem 0rem;
   margin-top: -2.5rem;
 }
-@media all and (min-width: 500px) {
+@media all and (min-width: 991px) {
   .la-carte .resto--titre h1 {
     width: auto !important;
     max-width: calc(100% - 8rem) !important;

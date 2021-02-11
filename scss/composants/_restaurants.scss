@@ -9,13 +9,14 @@
             ul.nav__pages {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
+                // justify-content: space-around;
                 flex-wrap: wrap;
                 align-items: flex-end;
                 flex: 1 0 33%;
             }
             ul li {
-                max-width: 25rem;
+                // max-width: 25rem;
+                width: 40%;
                 min-width: 25rem;
                 margin: 0 map-get($size, marge);
             }
@@ -27,6 +28,14 @@
                 .img--centered {
                     object-position: center center!important;
                 }
+            }
+        }
+        @include big-tv {
+            ul li {
+                // max-width: 25rem;
+                width: 25%;
+                min-width: 25rem;
+                margin: 0 map-get($size, marge);
             }
         }
         h2 {
